@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(156, 205, 181);
+    color: rgb(8, 8, 8);
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+header, footer {
+ color: rgb(7, 7, 7);
+ background-color: rgb(253, 253, 251);
+ width: 100%;
+ height: 50px;
+}
+header{
+    display: inline-flex;
+    font-family: 'Rambla', sans-serif;
+    font-size: 1.1em;
+}
+.logo{
+    color: rgb(0, 0, 0);
+    font-family: 'Rambla', sans-serif;
+    font-size: 1.1em;
+}
+footer{
+    text-align: center;
+}
+button{
+    font-size: 1em;
+    width: auto;
+    height: 40px;
+    background-color:rgb(251, 253, 253);
+    border-radius: 5px;
+    margin: 5px;
+}
+.problema{
+    grid-area: a1;
+    background-color: #7ccedc;
+    color: rgb(14, 13, 13);
+    border-radius: 10px;
+    margin: 10px;
+}
+.esquemaProblema{
+    grid-area: a2;
+    background-color: rgb(172, 136, 255);
+    border-radius: 10px;
+    margin: 10px;
+}
+.imgProblema{
+    border-radius:10px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+.datos{
+    grid-area: a3;
+    background-color: rgb(255, 173, 234);
+    border-radius: 10px;
+    margin: 10px;
+}
+.formulas{
+    grid-area: a4;
+    background-color: rgb(241, 136, 113);
+    border-radius: 10px;
+    margin: 10px;
+}
+.calculos{
+    grid-area: a5;
+    background-color: rgb(107, 211, 147);
+    color: rgb(9, 9, 9);
+    border-radius: 10px;
+    margin: 10px;
+}
+.resultado{
+    grid-area: a6;
+    background-color: rgb(231, 239, 120);
+    color: rgb(11, 11, 11);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns:  repeat(4, [col] 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas: "a1 a1 a2 a2"
+                         "a3 a3 a4 a4"
+                         "a5 a5 a6 a6";
+    width: 100%;
+    height: 100%;
+}
